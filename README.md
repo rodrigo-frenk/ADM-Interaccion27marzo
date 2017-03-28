@@ -5,6 +5,7 @@ Curso de Introducción a la Interacción.
 
 ### Contenidos: 
 
+- Principios de Diseño UX
 - Conceptos de Interacción
 - Maquetado
 - SASS
