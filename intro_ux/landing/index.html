@@ -9,6 +9,8 @@
    <link rel="stylesheet" href="recursos/bootstrap-3.3.7-dist/css/bootstrap.min.css">
    <link rel="stylesheet" href="recursos/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
 
+   <link rel="stylesheet" href="recursos/font-awesome-4.7.0/css/font-awesome.min.css">
+
    <link rel="stylesheet" href="css/landing.css">
 
 </head>
@@ -27,7 +29,8 @@
          <a href="#" class="float-right">
 
             <div class="p-1">
-               <img src="http://fakeimg.pl/30x30" alt="">
+               <!-- i.fa.fa-user -->
+               <i class="fa fa-user-plus"></i>
             </div>
             <span class="text-center">
                Regístrate
@@ -38,7 +41,8 @@
          <a href="#" class="float-right">
 
             <div class="p-1">
-               <img src="http://fakeimg.pl/30x30" alt="">
+               <!-- i.fa.fa-user -->
+               <i class="fa fa-user"></i>
             </div>
             <span class="text-center">
                Ingresa
@@ -56,16 +60,133 @@
 
       <!-- img.wh-100.abs.z-1 -->
       <div class="imgLiquidFill wh-100 abs z-1">
-         <img src="http://unsplash.it/1200x400?random=1" alt="">
+         <img src="http://unsplash.it/1200x600?random=1" alt="">
       </div>
 
-      <!-- h1>lorem9 -->
-      <h1>
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum.
-      </h1>
+      <div class="cortina wh-100 abs z-1"></div>
+
+
+      <div class="texto container h-100">
+
+         <!-- .col-md-5>h1{Título}+h4>lorem9 -->
+         <div class="col-md-5 h-100 v-center">
+            <h1>Título</h1>
+            <h4>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis!
+            </h4>
+         </div>
+
+         <!-- .col-md-5.col-md-offset-2 -->
+         <div class="col-md-5 col-md-offset-2 h-100 v-center">
+
+            <!-- p>lorem15 -->
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, esse, rem odit beatae iure officia!
+            </p>
+
+            <!-- a[#].button.btn-primary{Regístrate} -->
+            <a href="#" class="btn btn-primary">
+               Regístrate
+            </a>
+
+         </div>
+
+      </div>
+
 
    </section>
 
+   <!-- section#puntos-principales.container -->
+   <section id="puntos-principales" class="container">
+
+      <!-- .punto-principal.col-md-4.h-xs-3x -->
+      <div class="punto-principal col-md-4 h-xs-3x text-center">
+         <!-- img.imagen+h4.titulo+p.texto -->
+
+         <!-- .imagen.imgLiquidNoFill.h-xs-1x -->
+         <div class="imagen imgLiquidNoFill h-xs-1x">
+            <img src="http://unsplash.it/400/300?random=2" alt="">
+         </div>
+
+         <h4 class="titulo">
+            Título del Punto Principal
+         </h4>
+
+         <p class="texto">
+            <!-- lorem13 -->
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quas, commodi odit esse.
+         </p>
+
+      </div>
+
+
+   </section>
+
+   <!-- section#texto-introduccion.container -->
+   <section id="texto-introduccion" class="container">
+
+      <!-- .col-md-6.col-md-offset-3>((p>lorem13)*2) -->
+      <div class="col-md-6 col-md-offset-3">
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et repellendus, animi quos nisi!</p>
+         <p>Quasi dolores fugiat dicta, officia, possimus incidunt cumque vel a necessitatibus ipsam. Quod.</p>
+      </div>
+
+   </section>
+
+   <!-- section#registro-invitacion.container -->
+   <section id="registro-invitacion" class="container h-xs-4x">
+
+      <div class="col-md-6 h-100 v-center">
+
+         <!-- h2{Registro} -->
+         <h2>Registro</h2>
+         <!-- p>lorem18 -->
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam qui, tempora quia veritatis quae dolores recusandae praesentium.
+         </p>
+
+      </div>
+
+      <div class="col-md-6 h-100 text-center v-center">
+         <!-- a[#].btn.btn-primary{Regístrate} -->
+         <a href="#" class="btn btn-primary">
+            Regístrate
+         </a>
+
+      </div>
+
+   </section>
+
+
+   <!-- footer#pie-pagina.container-fluid    -->
+   <footer id="pie-pagina" class="container-fluid">
+      <!-- .col-md-4*2 -->
+
+      <div class="col-md-4">
+         Copyright 2017
+      </div>
+
+      <div class="col-md-4 col-md-offset-4 text-xs-center text-md-right">
+         <!-- (.col-xs-4>a[#]{i})*3 -->
+
+         <div class="col-xs-4">
+            <a href="#" target="_blank">
+               <i class="fa fa-facebook"></i>
+            </a>
+         </div>
+         <div class="col-xs-4">
+            <a href="#" target="_blank">
+               <i class="fa fa-twitter"></i>
+            </a>
+         </div>
+         <div class="col-xs-4">
+            <a href="#" target="_blank">
+               <i class="fa fa-instagram"></i>
+            </a>
+         </div>
+
+      </div>
+   </footer>
 
    <script src="recursos/jquery/jquery-3.2.0.min.js"></script>
 

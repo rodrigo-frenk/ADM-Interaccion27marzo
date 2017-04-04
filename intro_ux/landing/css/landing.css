@@ -6,6 +6,12 @@
 
 /* Clases de utilidades */
 
+
+.h-100 {
+   /*h100%*/
+   height: 100%;
+}
+
 .h-xs-1x {
    height: 75px;
 }
@@ -20,6 +26,15 @@
 
 .h-xs-4x {
    height: 300px;
+}
+
+
+
+/* clases para alineción horizontal */
+
+.text-xs-center {
+   /*tac*/
+   text-align: center;
 }
 
 /* Reglas para pantallas medianas */
@@ -40,6 +55,12 @@
 
    .h-md-4x {
       height: 300px;
+   }
+
+
+   .text-md-right {
+      /*tac*/
+      text-align: right;
    }
 
 }
@@ -122,4 +143,10 @@ img {
 }
 .width-auto {
    width: auto !important
+}
+
+
+.cortina {
+   /*bgc*/
+   background-color: rgba(255,255,255,0.5);
 }
