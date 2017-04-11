@@ -19,6 +19,14 @@ $(document).ready(function(){
 
       alturaHijos = 0
 
+      elementosHijos.first().css({
+         marginTop: 0
+      })
+
+      elementosHijos.last().css({
+         marginBottom: 0
+      })
+
       // ahora, iterar por cada uno de estos elementos hijos:
       elementosHijos.each(function(){
          elementoHijo = $(this)

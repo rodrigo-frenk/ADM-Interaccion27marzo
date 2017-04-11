@@ -56,20 +56,20 @@
 
 
    <!-- section#portada.container-fluid.h-3x -->
-   <section id="portada" class="container-fluid h-xs-3x h-md-4x rel p-0">
+   <section id="portada" class="container-fluid h-a rel p-0">
 
       <!-- img.wh-100.abs.z-1 -->
-      <div class="imgLiquidFill wh-100 abs z-1">
+      <div class="imgLiquidFill w-100 h-xs-3x h-md-4x abs z-1">
          <img src="http://unsplash.it/1200x600?random=1" alt="">
       </div>
 
-      <div class="cortina wh-100 abs z-1"></div>
+      <div class="cortina w-100 h-xs-3x h-md-4x abs z-1"></div>
 
 
-      <div class="texto container h-100">
+      <div class="texto container h-a">
 
          <!-- .col-md-5>h1{Título}+h4>lorem9 -->
-         <div class="col-md-5 h-100 v-center">
+         <div class="col-md-5 h-xs-3x h-md-4x v-center">
             <h1>Título</h1>
             <h4>
                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis!
@@ -77,7 +77,7 @@
          </div>
 
          <!-- .col-md-5.col-md-offset-2 -->
-         <div class="col-md-5 col-md-offset-2 h-100 v-center">
+         <div class="col-md-5 col-md-offset-2 h-xs-3x h-md-4x v-center">
 
             <!-- p>lorem15 -->
             <p>
@@ -100,7 +100,47 @@
    <section id="puntos-principales" class="container">
 
       <!-- .punto-principal.col-md-4.h-xs-3x -->
-      <div class="punto-principal col-md-4 h-xs-3x text-center">
+      <div class="punto-principal col-md-4 h-xs-3x text-center p-2">
+         <!-- img.imagen+h4.titulo+p.texto -->
+
+         <!-- .imagen.imgLiquidNoFill.h-xs-1x -->
+         <div class="imagen imgLiquidNoFill h-xs-1x">
+            <img src="http://unsplash.it/400/300?random=2" alt="">
+         </div>
+
+         <h4 class="titulo">
+            Título del Punto Principal
+         </h4>
+
+         <p class="texto">
+            <!-- lorem13 -->
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quas, commodi odit esse.
+         </p>
+
+      </div>
+
+      <!-- .punto-principal.col-md-4.h-xs-3x -->
+      <div class="punto-principal col-md-4 h-xs-3x text-center p-2">
+         <!-- img.imagen+h4.titulo+p.texto -->
+
+         <!-- .imagen.imgLiquidNoFill.h-xs-1x -->
+         <div class="imagen imgLiquidNoFill h-xs-1x">
+            <img src="http://unsplash.it/400/300?random=2" alt="">
+         </div>
+
+         <h4 class="titulo">
+            Título del Punto Principal
+         </h4>
+
+         <p class="texto">
+            <!-- lorem13 -->
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quas, commodi odit esse.
+         </p>
+
+      </div>
+
+      <!-- .punto-principal.col-md-4.h-xs-3x -->
+      <div class="punto-principal col-md-4 h-xs-3x text-center p-2">
          <!-- img.imagen+h4.titulo+p.texto -->
 
          <!-- .imagen.imgLiquidNoFill.h-xs-1x -->
@@ -123,7 +163,7 @@
    </section>
 
    <!-- section#texto-introduccion.container -->
-   <section id="texto-introduccion" class="container">
+   <section id="texto-introduccion" class="container p-4">
 
       <!-- .col-md-6.col-md-offset-3>((p>lorem13)*2) -->
       <div class="col-md-6 col-md-offset-3">
@@ -134,9 +174,9 @@
    </section>
 
    <!-- section#registro-invitacion.container -->
-   <section id="registro-invitacion" class="container h-xs-4x">
+   <section id="registro-invitacion" class="container h-a">
 
-      <div class="col-md-6 h-100 v-center">
+      <div class="col-md-6 h-xs-3x h-md-4x v-center">
 
          <!-- h2{Registro} -->
          <h2>Registro</h2>
@@ -147,9 +187,9 @@
 
       </div>
 
-      <div class="col-md-6 h-100 text-center v-center">
+      <div class="col-md-6 h-xs-2x h-md-4x text-center v-center">
          <!-- a[#].btn.btn-primary{Regístrate} -->
-         <a href="#" class="btn btn-primary">
+         <a href="#" class="btn btn-primary p-1">
             Regístrate
          </a>
 
@@ -159,7 +199,7 @@
 
 
    <!-- footer#pie-pagina.container-fluid    -->
-   <footer id="pie-pagina" class="container-fluid">
+   <footer id="pie-pagina" class="container-fluid p-1">
       <!-- .col-md-4*2 -->
 
       <div class="col-md-4">
