@@ -1,6 +1,8 @@
+/*
 * {
    outline: 1px solid #aaa;
 }
+*/
 
 
 
@@ -171,4 +173,20 @@ img {
 .cortina {
    /*bgc*/
    background-color: rgba(255,255,255,0.5);
+}
+
+
+
+
+/* COLORES */
+
+
+#cabecera,
+#pie-pagina {
+   background-color: #000;
+}
+
+#puntos-principales,
+#registro-invitacion {
+   background-color: #ddd;
 }
