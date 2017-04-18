@@ -17,3 +17,9 @@ Curso de Introducción a la Interacción.
 
 - Lectura sobre el futuro del CSS ante los problemas intrínsecos que tiene:
 http://www.barelyfitz.com/screencast/html-training/css/positioning/
+
+- Grid de Boostrap
+http://getbootstrap.com/css/#grid
+
+- Javascript Standard Style
+https://github.com/feross/standard
