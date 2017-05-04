@@ -15,6 +15,9 @@ Curso de Introducción a la Interacción.
 
 #### Lecturas / Referencias
 
+- Posicionamiento CSS
+http://www.barelyfitz.com/screencast/html-training/css/positioning/
+
 - Lectura sobre el futuro del CSS ante los problemas intrínsecos que tiene:
 http://www.barelyfitz.com/screencast/html-training/css/positioning/
 

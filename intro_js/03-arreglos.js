@@ -4,6 +4,8 @@
 
 var arreglo = []
 
+arreglo = Array();
+
 // un arreglo con cuatro números
 arreglo = [1,2,3,4]
 
@@ -20,6 +22,13 @@ arreglo[1]
 // recuperar el último elemento del arreglo:
 // Lo podríamos hacer manualmente,
 arreglo[ 3 ]
+
+
+// podemos averiguar la cantidad de elementso en un arreglo:
+
+arreglo.length
+
+
 // pero para prevenir problemas usaremos la propiedad '.length'
 arreglo[ arreglo.length - 1 ]
 
@@ -34,6 +43,9 @@ for (var i = 0; i < arreglo.length; i++) {
 }
 
 
+for( i in arreglo ) {
+   console.log("la palabra numero", i, "es:", arreglo[i] )
+}
 
 
 
@@ -45,6 +57,11 @@ frutas = []
 frutas[0] = "manzana"
 frutas[1] = "pera"
 
+
+// introducir un elemento al principio del arreglo
+
+frutas.unshift("fresa")
+
 // introducir elementos adicionales al final del arreglo:
 frutas.push("naranja")
 frutas.push("kiwi")
@@ -53,6 +70,8 @@ frutas.push("melón")
 frutas.push("mamey")
 frutas.push("guanábana")
 frutas.push("mango")
+
+
 
 frutas[2] = "mandarina"
 
@@ -74,6 +93,9 @@ frutas.splice( 2, 1 )
 
 console.log( "el indice de kiwi es:", frutas.indexOf("kiwi") )
 
+
+// sacar ultimo elemento del arreglo (el metodo devuelve dicho valor)
+frutas.pop()
 
 
 // borrar un elemento usando solo su valor

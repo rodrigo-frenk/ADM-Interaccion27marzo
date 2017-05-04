@@ -3,7 +3,7 @@
 // usar variable nueva directamente, sin declarar
 unaVariable = 'algo'
 
-// declarar nuestras variables para controlar dónde existen/operan
+// declarar nuestras variables para controlar dónde existen/operan (Scope o ámbito)
 var otraVariable
 var otraVariableMas
 

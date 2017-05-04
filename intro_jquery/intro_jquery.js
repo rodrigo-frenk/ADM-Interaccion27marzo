@@ -32,6 +32,9 @@ titulo1 = $('#titulo-prueba')
 // seleccionamos un elemento usando su etiqueta
 titulo2 = $('h2')
 
+// seleccionar elementos usando su clase
+titulares = $('.titular')
+
 // Dos maneras de modificar estilos con jQuery.
 titulo1.css('color','green')
 
@@ -39,6 +42,10 @@ titulo1.css('color','green')
 titulo2.css({
    color: 'purple',
    fontSize: 72
+})
+
+titulares.css({
+   backgroundColor: 'red'
 })
 
 // Interactuar con el contenido de los Elementos:
@@ -53,7 +60,7 @@ titulo2.html('Nuevo Subtítulo')
 
 
 
-// propiedades visuales
+// consultar propiedades visuales
 
 console.log( 'el color del titulo es ', titulo1.css('color') )
 console.log( 'el ancho de la ventana es ', $(window).width() )
@@ -63,9 +70,15 @@ console.log( 'la altura de la ventana es ', $(window).height() )
 
 // un selector puede obtener varios elementos.
 // iterar por todos los elementos seleccionados:
-$('h2').each(function(i){
+$('.titular').each(function(i){
    // cada uno de los elementos es representado por $(this)
    cadaElemento = $(this)
+
+   console.log(
+      'el titular numero', i,
+      'tiene el contenido',
+      cadaElemento.html()
+   )
 
    cadaElemento.css({
       backgroundColor: 'grey',
@@ -121,6 +134,7 @@ boton.click(function(){
    // lo aplicamos a la ventana
 
    $('body').css({
+      // backgroundColor: 'rgb(125,125,125)' // un color
       backgroundColor: color
    })
 
@@ -147,6 +161,7 @@ $('h1').clone()
 .prependTo('#titulares')
 
 // por cierto, en el ejemplo anterior estamos encadenando métodos
+
 
 
 // seleccionar el ultimo titular 'h2'
