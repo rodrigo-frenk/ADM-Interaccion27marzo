@@ -11,22 +11,49 @@
       .caja {
          width: 100vw;
          min-height: 100vh;
+
+         /*
+         box-sizing:
+         hace que el padding de una caja no
+         afecte su tamaño total
+         */
+         -webkit-box-sizing: border-box;
+         box-sizing: border-box;
       }
 
       #caja1 {
          /*tac*/
          text-align: center;
+         background-color: #ae7;
       }
 
-      #boton-click {
+      #boton-abrir {
          height: 20vh;
-         padding: 64px;
          margin-top: 40vh;
+         padding: 0 64px;
+
+      }
+
+
+      #boton-cerrar {
+         padding: 64px;
+         position: absolute;
+         top: 64px;
+         right: 64px;
+         background-color: #e7a;
+         z-index: 1;
       }
 
       #caja2 {
+         padding: 64px;
          position: absolute;
+         top: 0;
          left: 100%;
+         background-color: #fff;
+      }
+
+      #caja2 p {
+         opacity: 0;
       }
 
    </style>
@@ -36,12 +63,16 @@
    <!-- .caja*2 -->
    <div id="caja1" class="caja">
       <!-- button#boton-click{Desplegar Contenido} -->
-      <button id="boton-click">
+      <button id="boton-abrir">
          Desplegar Contenido
       </button>
    </div>
 
    <div id="caja2" class="caja">
+
+      <div id="boton-cerrar">
+         Cerrar
+      </div>
 
       <!-- (p>lorem22)*16 -->
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, quaerat, magnam? Tenetur ipsam facere pariatur earum, consequatur molestias at aliquid eveniet quidem?</p>
