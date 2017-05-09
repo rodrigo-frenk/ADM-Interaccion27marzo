@@ -1,0 +1,54 @@
+* {
+  outline: 1px solid #def;
+}
+
+html,
+body {
+
+  /*w100%*/
+  /*h100%*/
+  width: 100%;
+  height: 100%;
+
+  /*m0*/
+  margin: 0;
+
+  /*oya*/
+  overflow-y: auto;
+
+}
+
+#cajas {
+
+  width: 100vw;
+  height: 500vh;
+
+  /*position: absolute;*/
+  top: 0;
+  z-index: -1;
+}
+
+
+.caja {
+
+  width: 100vw;
+  height: 100vh;
+
+  display: inline-block;
+
+  text-align: center;
+
+}
+
+
+.caja:nth-child(even) {
+  background-color: #fff;
+}
+
+.caja:nth-child(odd) {
+  background-color: #ddd;
+}
+
+.caja:nth-child(2) {
+  background-color: #aef;
+}
