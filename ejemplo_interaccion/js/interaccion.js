@@ -6,6 +6,8 @@ $(document).ready(function(){
 
    interaccionScroll()
 
+   $(window).trigger('scroll')
+
    console.log("Ejemplo Interacción Listo.")
 
 })
@@ -21,8 +23,8 @@ function interaccionScroll() {
 
       laCajaQueAparecio = $(this)
 
-      cuantoScrollLlevamos = $('html').scrollTop()
-      // console.log( "cuantoScrollLlevamos", cuantoScrollLlevamos )
+      cuantoScrollLlevamos = $(window).scrollTop()
+      console.log( "cuantoScrollLlevamos", cuantoScrollLlevamos )
 
       dondeEmpiezaLaCaja = laCajaQueAparecio.offset().top
       // console.log( "dondeEmpiezaLaCaja", dondeEmpiezaLaCaja )
@@ -31,7 +33,7 @@ function interaccionScroll() {
 
       diferencia = dondeEmpiezaLaCaja - cuantoScrollLlevamos
 
-      if( diferencia < ( alturaDeVentana * 0.6 ) ) {
+      if( diferencia < ( alturaDeVentana * 0.3 ) ) {
 
          laCajaQueAparecio.children().addClass('visible')
 
