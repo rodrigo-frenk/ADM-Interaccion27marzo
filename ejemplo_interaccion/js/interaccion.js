@@ -1,20 +1,12 @@
-var scrollAnterior = 0
-
-var siguienteCaja = 0
-
-var scrolling = false
-
 $(document).ready(function(){
 
-scrolling = false
+   $('.caja').addClass('v-center')
 
-  $('.caja').addClass('v-center')
+   centrarContenidos()
 
-  centrarContenidos()
+   interaccionScroll()
 
-  interaccionScroll()
-
-  console.log("Ejemplo Interacción Listo.")
+   console.log("Ejemplo Interacción Listo.")
 
 })
 
@@ -22,115 +14,83 @@ scrolling = false
 
 function interaccionScroll() {
 
-  $('html,body').scroll(function(){
-    console.log("body scroll");
-// console.log("scrolling", scrolling);
-    if( ! scrolling ) {
-
-      scrolling = setTimeout(function(){
-
-        // averiguar cuánto scroll ha realizado 'body'
-        cantidadScroll = $('body').scrollTop()
-
-        if( cantidadScroll > scrollAnterior ) {
-
-          console.log( "abajo" )
-
-          siguienteCaja++
-
-        } else {
-
-          console.log( "arriba" )
-
-          siguienteCaja--
-
-        }
-
-        if( siguienteCaja > $('.caja').length - 1 ) {
-
-          siguienteCaja = $('.caja').length - 1
-
-        }
-        if( siguienteCaja < 0 ) {
-
-          siguienteCaja = 0
-
-        }
-
-        // actualizar el valor de scroll anterior:
-        scrollAnterior = cantidadScroll
-
-        console.log( "siguiente caja:", siguienteCaja )
+   $('.caja').appear()
 
 
-        mostrarCaja( siguienteCaja )
+   $('.caja').on('appear', function(event, $all_appeared_elements) {
 
+      laCajaQueAparecio = $(this)
 
-        //scrolling = false
+      cuantoScrollLlevamos = $('html').scrollTop()
+      // console.log( "cuantoScrollLlevamos", cuantoScrollLlevamos )
 
+      dondeEmpiezaLaCaja = laCajaQueAparecio.offset().top
+      // console.log( "dondeEmpiezaLaCaja", dondeEmpiezaLaCaja )
 
-      },300)
+      alturaDeVentana = $(window).height()
 
-    }
+      diferencia = dondeEmpiezaLaCaja - cuantoScrollLlevamos
 
-  })
+      if( diferencia < ( alturaDeVentana * 0.6 ) ) {
 
-}
+         laCajaQueAparecio.children().addClass('visible')
 
+      } else {
 
-function mostrarCaja( cualCaja ) {
+         laCajaQueAparecio.children().removeClass('visible')
 
-  $('#cajas').animate({
+      }
 
-    top: $('.caja').eq( cualCaja ).position().top
+   })
 
-  }, 500, function() {
+   $('.caja').on('disappear', function(event, $all_disappeared_elements) {
 
-    scrolling = false
+      $(this).children().removeClass('visible')
 
-  })
+   });
 
 
 }
+
 
 
 
 function centrarContenidos() {
 
-  // Centrado Vertical:
-  // Iterar por cada elemento que tenga la clase 'v-center'
-  $('.v-center').each(function(){
+   // Centrado Vertical:
+   // Iterar por cada elemento que tenga la clase 'v-center'
+   $('.v-center').each(function(){
 
-     elementoPadre = $(this)
+      elementoPadre = $(this)
 
-     elementosHijos = elementoPadre.children()
+      elementosHijos = elementoPadre.children()
 
-     alturaHijos = 0
+      alturaHijos = 0
 
-     elementosHijos.first().css({
-        marginTop: 0
-     })
+      elementosHijos.first().css({
+         marginTop: 0
+      })
 
-     elementosHijos.last().css({
-        marginBottom: 0
-     })
+      elementosHijos.last().css({
+         marginBottom: 0
+      })
 
-     // ahora, iterar por cada uno de estos elementos hijos:
-     elementosHijos.each(function(){
-        elementoHijo = $(this)
-        // sumar la altura del elemento hijo a la altura de todos los hijos en conjunto
-        alturaHijos += elementoHijo.height()
-     })
+      // ahora, iterar por cada uno de estos elementos hijos:
+      elementosHijos.each(function(){
+         elementoHijo = $(this)
+         // sumar la altura del elemento hijo a la altura de todos los hijos en conjunto
+         alturaHijos += elementoHijo.height()
+      })
 
-     diferencia = elementoPadre.height() - alturaHijos
-     // dividir diferencia entre 2
-     espacioSuperior = diferencia / 2
+      diferencia = elementoPadre.height() - alturaHijos
+      // dividir diferencia entre 2
+      espacioSuperior = diferencia / 2
 
-     // dar espaciado superior al padre, para que empuje sus hijos hacia abajo
-     elementoPadre.css({
-        paddingTop: espacioSuperior
-     })
+      // dar espaciado superior al padre, para que empuje sus hijos hacia abajo
+      elementoPadre.css({
+         paddingTop: espacioSuperior
+      })
 
-  })
+   })
 
 }

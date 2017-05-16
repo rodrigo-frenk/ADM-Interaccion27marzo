@@ -90,8 +90,12 @@ frutas.splice( 2, 1 )
 
 
 // averiguar la posición de un elemento, usando su valor
+// si no encuentra el elemento, nos arroja -1
 
 console.log( "el indice de kiwi es:", frutas.indexOf("kiwi") )
+console.log( "el indice de papaya es:", frutas.indexOf("papaya") )
+
+
 
 
 // sacar ultimo elemento del arreglo (el metodo devuelve dicho valor)

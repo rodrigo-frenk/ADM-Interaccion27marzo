@@ -57,7 +57,7 @@ persona = {
 }
 
 
-
+persona.nombreCompleto()
 
 
 

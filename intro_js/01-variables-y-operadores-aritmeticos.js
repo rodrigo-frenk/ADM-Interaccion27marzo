@@ -33,12 +33,13 @@ unaVariable = [1, 2, 3]
 unaVariable = { a: 123 }
 
 
-a = 8
-b = 3
 
 
 // operadores aritméticos +, -, *, /
 // Math.pow para operaciones potencia y raíz
+
+a = 8
+b = 3
 
 c = a + b
 console.log( 'la suma de', a, 'más', b, 'es', c )
@@ -65,6 +66,7 @@ console.log( 'el módulo', b, 'de', a, 'es', c )
 
 
 
+// Operadores de Asignación
 
 a = 100
 
@@ -84,6 +86,7 @@ console.log( "el nuevo valor de a es", a )
 
 
 // operadores de incremento
+a = 0
 
 a++
 console.log( "el nuevo valor de a es", a )
@@ -115,6 +118,7 @@ a <= b
 // operadores lógicos
 // AND &&
 a < b && a != b
+
 // OR ||
 a < b || a != b
 
