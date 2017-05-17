@@ -1,0 +1,13 @@
+@import '../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+
+$color_fondo: #00aaff;
+$color_texto: #fff;
+
+body {
+
+   background-color: $color_fondo;
+   color: $color_texto;
+
+}
+
+@import 'header';

@@ -1,0 +1,30 @@
+header {
+
+   @extend .row;
+
+   &, li {
+      border: 1px solid #0af;
+   }
+
+   &:hover {
+      background-color: #0af;
+   }
+
+   nav {
+      ul {
+         li {
+
+            // extendemos clases de bootstrap
+            // para utilizar acomodo responsivo
+
+            @extend .col-md-6;
+            @extend .col-lg-3;
+
+
+
+            background-color: $color_texto;
+            color: $color_fondo;
+         }
+      }
+   }
+}

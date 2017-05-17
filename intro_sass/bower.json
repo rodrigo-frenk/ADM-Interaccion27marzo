@@ -1,0 +1,20 @@
+{
+  "name": "intro_sass",
+  "homepage": "https://github.com/rodrigo-frenk/ADM-Interacci-n27marzo",
+  "authors": [
+    "rodrigo-frenk <rodrigo.frenk@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}

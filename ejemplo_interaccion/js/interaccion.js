@@ -1,3 +1,22 @@
+/*
+
+Interaccion Scroll
+
+1. Existe una composición con N cajas que miden una pantalla completa, una sobre la otra
+
+2. Cuando el usuario scrollea, las cajas se mueven normalmente
+
+3. El contenido de dichas cajas esta oculto hasta abajo
+
+4. Cuando el usuario scrollea hasta una caja, y si ésta está mayoritariamente completa dentro del visor,
+
+5. Aparecen sus contenidos, animándose de abajo hacia el centro
+
+6. Al desaparecer la caja, los contenidos vuelven hasta abajo, a su posición original oculta.
+
+*/
+
+
 $(document).ready(function(){
 
    $('.caja').addClass('v-center')
@@ -6,7 +25,8 @@ $(document).ready(function(){
 
    interaccionScroll()
 
-   $(window).trigger('scroll')
+   // activar evento de scroll al entrar a la web
+   $(window).scroll()
 
    console.log("Ejemplo Interacción Listo.")
 
@@ -24,6 +44,7 @@ function interaccionScroll() {
       laCajaQueAparecio = $(this)
 
       cuantoScrollLlevamos = $(window).scrollTop()
+
       console.log( "cuantoScrollLlevamos", cuantoScrollLlevamos )
 
       dondeEmpiezaLaCaja = laCajaQueAparecio.offset().top
